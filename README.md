@@ -2,7 +2,7 @@
 Gadget Hub is a modern, responsive e-commerce web application designed to showcase and sell the latest electronic gadgets. Built with HTML, CSS, and JavaScript, it features a sleek UI with smooth animations, a dynamic cart system, and a quick-view modal for enhanced user experience. The app is optimized for performance and accessibility across various devices and browsers.
 
 ## 🚀 Live Demo
-For a live demo:-
+For a live demo:-https://poorna-sai-sriharsha.github.io/Gadget-Hub/
 
 ## 📸 Screenshots
 ![Gadget Hub UI](Gadget-Hub.png)
