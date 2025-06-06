@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget Hub</title>
+    <!-- Google Fonts: Inter for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><i class="fas fa-bolt"></i>Gadget Hub</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="#products" class="shop-btn">Shop Now</a></li>
+                <li><div class="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cartCount">0</span></div></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <h1>Discover the Future of Tech</h1>
+            <p>Explore our curated selection of the latest and greatest electronic gadgets, from smartphones to smart home devices.</p>
+            <a href="#products" class="hero-btn">Explore Products</a>
+        </div>
+    </section>
+    <!-- Featured Products Section -->
+    <section id="products" class="section-padding">
+        <div class="products-container">
+            <h2 class="section-heading">Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1709528922659-8f86b0f02b9b?q=80&w=1526&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smartphone">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Iphones</h5>
+                            <p>Latest generation smartphone with AI camera and stunning display.</p>
+                            <p class="price">₹1,45,000</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Laptop">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Laptops</h5>
+                            <p>Powerful and lightweight laptop for professionals on the go.</p>
+                            <p class="price">₹2,00,000</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1617625802912-cde586faf331?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smartwatch">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Smartwatches</h5>
+                            <p>Track your fitness and stay connected with this sleek smartwatch.</p>
+                            <p class="price">₹2,500</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1674658556545-f18d4080ab6c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Headphones">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Headphones</h5>
+                            <p>Immersive sound quality with noise-cancelling technology.</p>
+                            <p class="price">₹3,000</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1621958054700-7af166501105?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fENhbWVyYSUyMGRzbHIlMjBwcm9kdWN0fGVufDB8fDB8fHww" alt="Camera">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Cameras</h5>
+                            <p>Professional mirrorless camera with outstanding image quality.</p>
+                            <p class="price">₹75,000</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1613141412501-9012977f1969?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gaming Mouse">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Gaming Mouses</h5>
+                            <p>High-precision gaming mouse with customizable RGB lighting.</p>
+                            <p class="price">₹500</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1666771410003-8437c4781d49?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Monitor">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>4K Monitors</h5>
+                            <p>Stunning 27-inch 4K monitor for creative professionals.</p>
+                            <p class="price">₹22,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="VR Headset">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>VR Headsets</h5>
+                            <p>Step into virtual worlds with this comfortable VR headset.</p>
+                            <p class="price">₹2,899</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1609895314390-cb64c186466a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fEUlMjBSZWFkZXJ8ZW58MHx8MHx8fDA%3D" alt="E-Reader">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>PaperLite E-Readers</h5>
+                            <p>Read comfortably anywhere with this glare-free e-reader.</p>
+                            <p class="price">₹16,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1588131153911-a4ea5189fe19?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bluetooth Speaker">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Portable BT Speakers</h5>
+                            <p>Waterproof Bluetooth speaker with rich bass sound.</p>
+                            <p class="price">₹1,299</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1657357092389-49b1b254c1ac?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Webcam">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Webcams</h5>
+                            <p>Crystal clear video calls with this 1080p HD webcam.</p>
+                            <p class="price">₹1,995</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1739742473328-eddb0e0fd3a0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="External SSD">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>External SSDs</h5>
+                            <p>Fast and reliable portable storage for your files.</p>
+                            <p class="price">₹7,799</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- New Arrivals Section -->
+    <section id="new-arrivals" class="section-padding">
+        <div class="products-container">
+            <h2 class="section-heading">New Arrivals</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1636614178501-e03f25a87516?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tablet">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Tablets</h5>
+                            <p>Ultra-thin tablet perfect for creativity and entertainment.</p>
+                            <p class="price">₹45,000</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1640826808046-6d4d4faa30c8?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smart Speaker" />
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Smart Speakers</h5>
+                            <p>Compact smart speaker with powerful sound and voice assistant.</p>
+                            <p class="price">₹3,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1612801799511-1ee0705f3212?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gaming Console">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Gaming Consoles</h5>
+                            <p>Experience next-level gaming with stunning graphics and speed.</p>
+                            <p class="price">₹45,000</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1543235074-5e7ce5446433?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Drone">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Drones</h5>
+                            <p>Capture breathtaking aerial shots with this professional drone.</p>
+                            <p class="price">₹89,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1636569608385-58efc32690ea?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smart Thermostat">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Thermostats</h5>
+                            <p>Save energy and control your home temperature remotely.</p>
+                            <p class="price">₹12,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1589&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wireless Earbuds">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Air Buds</h5>
+                            <p>True wireless earbuds with long battery life and great sound.</p>
+                            <p class="price">₹6,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1603618090561-412154b4bd1b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Robot Vacuum">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Robo Cleaners</h5>
+                            <p>Smart robot vacuum with mapping technology for efficient cleaning.</p>
+                            <p class="price">₹24,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1650682009477-52fd77302b78?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smart Display">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Home Hub Displays</h5>
+                            <p>Control your smart home, watch videos, and more.</p>
+                            <p class="price">₹9,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1528395874238-34ebe249b3f2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Projector">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Projectors</h5>
+                            <p>Portable mini projector for movies and presentations on the go.</p>
+                            <p class="price">₹18,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1557935728-e6d1eaabe558?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fitness Tracker">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Fitness Trackers</h5>
+                            <p>Monitor your activity, sleep, and heart rate 24/7.</p>
+                            <p class="price">₹2,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1604942177421-df466b7410f6?q=80&w=1401&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Action Camera">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Action Cameras</h5>
+                            <p>Rugged and waterproof action camera for adventures.</p>
+                            <p class="price">₹19,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smart Lock">
+                    <div class="product-content">
+                        <div class="product-info">
+                            <h5>Smart Locks</h5>
+                            <p>Keyless entry and remote access control for your home.</p>
+                            <p class="price">₹14,999</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="quick-view-btn">Quick View</a>
+                            <a href="#" class="product-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <img id="modalImage" src="" alt="Product">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+            <p id="modalPrice" class="price"></p>
+            <div class="button-container">
+                <a href="#" class="product-btn" id="modalAddToCart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Mini-Cart Sidebar -->
+    <div class="mini-cart" id="miniCart">
+        <div class="mini-cart-content">
+            <span class="mini-cart-close">×</span>
+            <h3>Your Cart</h3>
+            <ul id="cartItems"></ul>
+            <p class="cart-total">Total: ₹<span id="cartTotal">0</span></p>
+            <a href="#" class="checkout-btn">Checkout</a>
+        </div>
+    </div>
+    <!-- Categories Section -->
+    <section id="categories" class="section-padding">
+        <div class="products-container">
+            <h2 class="section-heading">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card"><a href="#"><i class="fas fa-mobile-screen-button"></i><h5>Smartphones</h5></a></div>
+                <div class="category-card"><a href="#"><i class="fas fa-laptop"></i><h5>Laptops</h5></a></div>
+                <div class="category-card"><a href="#"><i class="fas fa-headphones"></i><h5>Audio</h5></a></div>
+                <div class="category-card"><a href="#"><i class="fas fa-stopwatch"></i><h5>Wearables</h5></a></div>
+                <div class="category-card"><a href="#"><i class="fas fa-keyboard"></i><h5>Accessories</h5></a></div>
+                <div class="category-card"><a href="#"><i class="fas fa-home"></i><h5>Smart Home</h5></a></div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="products-container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=1501&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About GadgetHub">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-heading">About Gadget Hub</h2>
+                    <p>Gadget Hub was founded with a passion for technology and a mission to bring the latest electronic innovations directly to you. We believe in quality, affordability, and exceptional customer service.</p>
+                    <p>Our curated selection features top brands and cutting-edge gadgets, ensuring you always have access to the best tech on the market. We're more than just a retailer; we're your trusted partner in the world of electronics.</p>
+                    <a href="#" class="product-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding">
+        <div class="products-container">
+            <h2 class="section-heading">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="slider-content"></div>
+                <div class="slider-controls">
+                    <button id="prevBtn" aria-label="Previous Testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="nextBtn" aria-label="Next Testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer id="footer" class="section-padding">
+        <div class="products-container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h5 class="footer-logo"><i class="fas fa-bolt"></i> Gadget Hub</h5>
+                    <p>Your one-stop shop for the latest electronics and gadgets. Quality products, great prices.</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA 94000</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-envelope"></i> support@gadgethub.com</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>Categories</h5>
+                    <ul>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Smartwatches</a></li>
+                        <li><a href="#">Audio Devices</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Smart Home</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © <span id="currentYear"></span> Gadget Hub. All Rights Reserved. | Developed by Poorna Sai Sriharsha
+                <div class="developer-links">
+                    <a href="https://www.linkedin.com/in/poorna-sai-sriharsha-perina/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="color: #0A66C2;"></i></a>
+                    <a href="https://github.com/Poorna-Sai-Sriharsha" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #181717;"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Link to external JS -->
+    <script src="script.js"></script>
+</body>
+</html>
